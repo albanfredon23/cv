@@ -14,11 +14,11 @@ const PROJECT_LINKS = {
 export const I18N = {
   fr: {
     name: 'ALBAN FREDON',
-    title: 'MACHINE LEARNING ENGINEER',
+    title: 'INGENIEUR IA & DEVELOPPEUR FULL-STACK',
     subtitle: 'Inférence & architecture IA',
     location: 'Limoges, France · Remote EU',
     ui: {
-      hint: 'Clique pour lire mon écran', lockup: 'Machine Learning Engineer · Limoges',
+      hint: 'Clique pour lire mon écran', lockup: 'Ingénieur IA & développeur full-stack · Limoges',
       start: 'CLIQUE POUR DÉMARRER', sound: 'Son',
       bios: ['ALBAN FREDON BIOS v7.0', 'Copyright (C) 2019-2026 Alban Fredon', '',
         ['Processeur : neuro-symbolique, 7 ans d\'expérience', 'OK'], ['Mémoire : 640 Ko', 'OK'], ['Carte graphique : WebGL', 'OK'],
@@ -37,7 +37,7 @@ export const I18N = {
     { key: '1', id: 'profil', label: 'PROFIL', body: [
       ['band', 'PROFIL'],
       ['', ''],
-      ['w', "Ingénieur Machine Learning & backend."],
+      ['w', "Ingénieur IA & développeur full-stack."],
       ['w', "5 ans en entreprise + 2 ans en freelance."],
       ['', ''],
       ['c', "Je rends l'IA plus sobre et plus fiable :"],
@@ -92,8 +92,8 @@ export const I18N = {
       ['y', 'MATHS & ALGORITHMES'],
       ['w', 'Filtrage bayésien (EKF), Spherical Constraint Graphs, algèbre des quaternions, tests statistiques'],
       ['', ''],
-      ['y', 'GENIE LOGICIEL'],
-      ['w', 'Python (expert), architecture backend, API asynchrones'],
+      ['y', 'GENIE LOGICIEL & FULL-STACK'],
+      ['w', 'Python (expert), architecture backend, API asynchrones, développement web full-stack (front-end HTML, CSS, JavaScript ; back-end Python / FastAPI)'],
       ['', ''],
       ['y', 'INFRA & OPS'],
       ['w', 'PyTorch, FastAPI, Docker, Prometheus, OpenTelemetry, CI/CD, méthodologie « zero crash »'],
@@ -112,11 +112,11 @@ export const I18N = {
   },
   en: {
     name: 'ALBAN FREDON',
-    title: 'MACHINE LEARNING ENGINEER',
+    title: 'AI ENGINEER & FULL-STACK DEVELOPER',
     subtitle: 'AI Inference & Architecture',
     location: 'Limoges, France · Remote EU',
     ui: {
-      hint: 'Click to read my screen', lockup: 'Machine Learning Engineer · Limoges',
+      hint: 'Click to read my screen', lockup: 'AI Engineer & Full-Stack Developer · Limoges',
       start: 'CLICK TO START', sound: 'Sound',
       bios: ['ALBAN FREDON BIOS v7.0', 'Copyright (C) 2019-2026 Alban Fredon', '',
         ['CPU: neuro-symbolic, 7 years of experience', 'OK'], ['Memory: 640 KB', 'OK'], ['Graphics: WebGL', 'OK'],
@@ -135,7 +135,7 @@ export const I18N = {
     { key: '1', id: 'profil', label: 'PROFILE', body: [
       ['band', 'PROFILE'],
       ['', ''],
-      ['w', 'Machine Learning & backend engineer.'],
+      ['w', 'AI engineer & full-stack developer.'],
       ['w', '5 years in industry + 2 years freelance.'],
       ['', ''],
       ['c', 'I make AI leaner and more reliable:'],
@@ -190,8 +190,8 @@ export const I18N = {
       ['y', 'MATHS & ALGORITHMS'],
       ['w', 'Bayesian filtering (EKF), Spherical Constraint Graphs, quaternion algebra, statistical testing'],
       ['', ''],
-      ['y', 'SOFTWARE ENGINEERING'],
-      ['w', 'Python (expert), backend architecture, asynchronous APIs'],
+      ['y', 'SOFTWARE & FULL-STACK ENGINEERING'],
+      ['w', 'Python (expert), backend architecture, asynchronous APIs, full-stack web development (front-end HTML, CSS, JavaScript; back-end Python / FastAPI)'],
       ['', ''],
       ['y', 'INFRA & OPS'],
       ['w', 'PyTorch, FastAPI, Docker, Prometheus, OpenTelemetry, CI/CD, zero-crash testing'],

@@ -30,7 +30,7 @@ export function createScreen() {
     g.fillStyle = '#2b3dff'; g.fillRect(24, 22, W - 48, 40);
     g.font = 'bold 30px "VT323", monospace'; g.textBaseline = 'top';
     g.fillStyle = '#ffef3a'; g.fillText('ALBAN FREDON', 36, 26);
-    g.fillStyle = '#ffffff'; g.fillText('ML ENGINEER', W - 36 - g.measureText('ML ENGINEER').width, 26);
+    g.fillStyle = '#ffffff'; g.fillText('AI · FULL-STACK', W - 36 - g.measureText('AI · FULL-STACK').width, 26);
     g.font = '26px "VT323", monospace';
     const visible = typed.lines.slice(-12);
     visible.forEach((l, i) => { g.fillStyle = TT[l[0]]; g.fillText(l[1], 30, 80 + i * 28); });
