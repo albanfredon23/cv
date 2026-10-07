@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alban Fredon</title>
+<meta name="description" content="CV interactif en 3D d'Alban Fredon, Machine Learning Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<canvas id="scene" aria-label="Alban en 3D, assis devant un vieil ordinateur. Cliquez pour lire son CV sur l'écran."></canvas>
+<div class="boot" id="boot" role="dialog" aria-modal="true" aria-labelledby="bootStart">
+  <pre class="boot__log" id="bootLog" aria-hidden="true"></pre>
+  <button class="boot__start" id="bootStart" type="button" hidden>CLIQUE POUR DÉMARRER</button>
+</div>
+
+<header class="lockup" id="lockup">
+  <h1>Alban Fredon</h1>
+  <p id="lockupText">Machine Learning Engineer · Limoges</p>
+</header>
+<div class="topbar">
+  <button class="snd" id="btnSound" type="button" aria-pressed="true" aria-label="Son">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4 9v6h4l5 4V5L8 9H4Z"/><path class="snd__on" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/><path class="snd__off" d="m17 9 5 6m0-6-5 6"/>
+    </svg>
+  </button>
+  <div class="lang" role="group" aria-label="Langue / Language">
+    <button type="button" data-lang="fr" lang="fr">FR</button>
+    <button type="button" data-lang="en" lang="en">EN</button>
+  </div>
+</div>
+<button class="hint" id="hint" type="button"><span class="dot"></span><span id="hintText">Clique pour lire mon écran</span></button>
+
+<section class="crt" id="crt" aria-hidden="true" aria-label="Terminal du CV">
+  <div class="crt__glass">
+    <div class="term" id="term" tabindex="-1" aria-live="polite"></div>
+    <div class="crt__bar">
+      <button class="crt__btn" id="btnMenu" type="button">MENU</button>
+      <button class="crt__btn" id="btnExit" type="button">QUITTER ✕</button>
+    </div>
+  </div>
+</section>
+
+<aside class="contact" id="contact" aria-hidden="true">
+  <h2 id="contactTitle">Merci d'être passé&nbsp;!</h2>
+  <p class="lede" id="contactLede">Un projet d'IA à rendre plus sobre, plus fiable&nbsp;? Écris-moi.</p>
+  <ul id="contactList"></ul>
+  <div class="actions">
+    <button class="ghost" id="btnAgain" type="button">Revoir l'écran</button>
+    <button class="primary" id="btnHome" type="button">Retour au bureau</button>
+  </div>
+</aside>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
