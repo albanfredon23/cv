@@ -30,20 +30,26 @@ canvas#scene { position: fixed; inset: 0; width: 100%; height: 100%; display: bl
   transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out); }
 .lockup h1 { text-shadow: 0 1px 12px rgba(0,0,0,0.45); margin: 0; font-weight: 700; font-size: clamp(22px, 3.2vw, 34px); letter-spacing: -0.02em; line-height: 1; }
 .lockup p { margin: 6px 0 0; color: var(--ink-dim); text-shadow: 0 1px 8px rgba(0,0,0,0.6); font-size: 14px; letter-spacing: 0.01em; }
-.hint { white-space: nowrap; position: fixed; left: 50%; bottom: max(28px, env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 5;
+.cta { position: fixed; left: 50%; bottom: max(28px, env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 5;
+  display: flex; gap: 8px; justify-content: center; width: max-content; max-width: calc(100vw - 32px);
+  transition: opacity 300ms var(--ease-out), transform 300ms var(--ease-out); }
+.hint { white-space: nowrap; text-decoration: none;
   display: inline-flex; align-items: center; gap: 10px; padding: 12px 18px 12px 16px; border-radius: 999px;
   background: rgba(21, 16, 13, 0.72); border: 1px solid rgba(255, 220, 170, 0.18); color: var(--ink);
   font: 600 15px/1 "Bricolage Grotesque", sans-serif; cursor: pointer; backdrop-filter: blur(8px);
   box-shadow: 0 10px 30px -10px rgba(0,0,0,0.6);
   transition: opacity 300ms var(--ease-out), transform 300ms var(--ease-out), background 160ms ease; }
 .hint:hover { background: rgba(40, 30, 22, 0.85); }
-.hint:active { transform: translateX(-50%) scale(0.97); }
+.hint:active { transform: scale(0.97); }
 .hint:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .hint .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--tt-green); box-shadow: 0 0 10px var(--tt-green); animation: pulse 1.6s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: 0.35; } }
+.hint--tour { background: var(--card); color: var(--card-ink); border-color: transparent; }
+.hint--tour:hover { background: #fff; }
+.hint--tour svg { width: 17px; height: 17px; }
 .is-hidden { opacity: 0 !important; pointer-events: none !important; }
 .lockup.is-hidden { transform: translateY(-6px); }
-.hint.is-hidden { transform: translateX(-50%) translateY(8px); }
+.cta.is-hidden { transform: translateX(-50%) translateY(8px); }
 
 .topbar { position: fixed; z-index: 40; top: max(18px, env(safe-area-inset-top)); right: 18px; display: flex; gap: 8px; align-items: center; }
 .snd { appearance: none; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 999px; cursor: pointer;
@@ -154,4 +160,3 @@ canvas#scene { position: fixed; inset: 0; width: 100%; height: 100%; display: bl
   .contact li a, .contact li span.row { padding: 7px 10px; }
 }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-</style>
