@@ -18,7 +18,7 @@ export const I18N = {
     subtitle: 'Inférence & architecture IA',
     location: 'Limoges, France · Remote EU',
     ui: {
-      hint: 'Clique pour lire mon écran', lockup: 'Ingénieur IA & développeur full-stack · Limoges',
+      hint: 'Clique pour lire mon écran', tour: 'Visite 3D', lockup: 'Ingénieur IA & développeur full-stack · Limoges',
       start: 'CLIQUE POUR DÉMARRER', sound: 'Son',
       bios: ['ALBAN FREDON BIOS v7.0', 'Copyright (C) 2019-2026 Alban Fredon', '',
         ['Processeur : neuro-symbolique, 7 ans d\'expérience', 'OK'], ['Mémoire : 640 Ko', 'OK'], ['Carte graphique : WebGL', 'OK'],
@@ -116,7 +116,7 @@ export const I18N = {
     subtitle: 'AI Inference & Architecture',
     location: 'Limoges, France · Remote EU',
     ui: {
-      hint: 'Click to read my screen', lockup: 'AI Engineer & Full-Stack Developer · Limoges',
+      hint: 'Click to read my screen', tour: '3D tour', lockup: 'AI Engineer & Full-Stack Developer · Limoges',
       start: 'CLICK TO START', sound: 'Sound',
       bios: ['ALBAN FREDON BIOS v7.0', 'Copyright (C) 2019-2026 Alban Fredon', '',
         ['CPU: neuro-symbolic, 7 years of experience', 'OK'], ['Memory: 640 KB', 'OK'], ['Graphics: WebGL', 'OK'],

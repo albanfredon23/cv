@@ -54,7 +54,7 @@ const rig = createCameraRig(screenWorld, reduceMotion);
    ========================================================= */
 let state = 'idle';
 const ui = {
-  hint: document.getElementById('hint'), lockup: document.getElementById('lockup'),
+  hint: document.getElementById('hint'), cta: document.getElementById('cta'), lockup: document.getElementById('lockup'),
   crt: document.getElementById('crt'), term: document.getElementById('term'),
 };
 const anim = { swivel: 0, swivelTarget: 0, wave: 0, talk: 0, lookAtCam: 1, lookAtCamTarget: 1, lookT: 2.8 };
@@ -65,7 +65,7 @@ const terminal = createTerminal(ui.term, { reduceMotion, onExit: () => exitToCon
 async function enterScreen() {
   if (state !== 'idle' && state !== 'contact') return;
   const from = state; state = 'zooming';
-  ui.hint.classList.add('is-hidden'); ui.lockup.classList.add('is-hidden');
+  ui.cta.classList.add('is-hidden'); ui.lockup.classList.add('is-hidden');
   contact.hide();
   anim.swivelTarget = 0;
   if (from === 'contact') await rig.setShot('idle', 1.1);
@@ -94,7 +94,7 @@ function goHome() {
   state = 'returning';
   rig.setShot('idle', 1.3).then(() => {
     state = 'idle';
-    ui.hint.classList.remove('is-hidden'); ui.lockup.classList.remove('is-hidden');
+    ui.cta.classList.remove('is-hidden'); ui.lockup.classList.remove('is-hidden');
   });
 }
 
@@ -103,6 +103,7 @@ function applyStaticText() {
   const t = T(), lang = getLang();
   document.documentElement.lang = lang;
   document.getElementById('hintText').textContent = t.hint;
+  document.getElementById('tourText').textContent = t.tour;
   document.getElementById('lockupText').textContent = t.lockup;
   document.getElementById('btnExit').textContent = t.exit;
   document.getElementById('contactTitle').textContent = t.cTitle;
