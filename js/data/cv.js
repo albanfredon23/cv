@@ -19,7 +19,7 @@ export const I18N = {
     location: 'Limoges, France · Remote EU',
     ui: {
       hint: 'Clique pour lire mon écran', tour: 'Visite 3D', lockup: 'Ingénieur IA & développeur full-stack · Limoges',
-      start: 'CLIQUE POUR DÉMARRER', sound: 'Son',
+      start: 'CLIQUE POUR DÉMARRER', sound: 'Son', legal: 'Légal', legalLabel: 'Mentions légales et confidentialité',
       bios: ['ALBAN FREDON BIOS v7.0', 'Copyright (C) 2019-2026 Alban Fredon', '',
         ['Processeur : neuro-symbolique, 7 ans d\'expérience', 'OK'], ['Mémoire : 640 Ko', 'OK'], ['Carte graphique : WebGL', 'OK'],
         ['Langues : français, anglais', 'OK'], ['Chargement de la scène 3D', 'OK']],
@@ -115,7 +115,7 @@ export const I18N = {
     location: 'Limoges, France · Remote EU',
     ui: {
       hint: 'Click to read my screen', tour: '3D tour', lockup: 'AI Engineer & Full-Stack Developer · Limoges',
-      start: 'CLICK TO START', sound: 'Sound',
+      start: 'CLICK TO START', sound: 'Sound', legal: 'Legal', legalLabel: 'Legal notice and privacy',
       bios: ['ALBAN FREDON BIOS v7.0', 'Copyright (C) 2019-2026 Alban Fredon', '',
         ['CPU: neuro-symbolic, 7 years of experience', 'OK'], ['Memory: 640 KB', 'OK'], ['Graphics: WebGL', 'OK'],
         ['Languages: French, English', 'OK'], ['Loading 3D scene', 'OK']],

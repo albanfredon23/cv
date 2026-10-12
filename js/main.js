@@ -113,6 +113,7 @@ function applyStaticText() {
   canvas.setAttribute('aria-label', t.canvas);
   document.getElementById('bootStart').textContent = t.start;
   document.getElementById('btnSound').setAttribute('aria-label', t.sound);
+  const legal = document.getElementById('legalLink'); legal.textContent = t.legal; legal.setAttribute('aria-label', t.legalLabel);
   renderBoot();
   document.querySelectorAll('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
 }
